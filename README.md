@@ -1,97 +1,56 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+# Swify
 
-# Getting Started
+> **Find your hostel, feel right at home.**  
+> A modern student living and hostel/PG discovery mobile application built with React Native.
 
-> **Note**: Make sure you have completed the [Set Up Your Environment](https://reactnative.dev/docs/set-up-your-environment) guide before proceeding.
+---
 
-## Step 1: Start Metro
+## 🌟 Overview
+**Swify** is a cross-platform mobile application designed to simplify campus accommodation discovery for students and young professionals. It empowers users to explore verified hostels and co-living spaces near their campus, visually navigate floor maps and architectural blueprints, select exact beds in real-time, and manage their stay seamlessly.
 
-First, you will need to run **Metro**, the JavaScript build tool for React Native.
+---
 
-To start the Metro dev server, run the following command from the root of your React Native project:
+## ✨ Features
+- **Interactive Floor Maps & Bed Booking**: View room blueprints with interactive bed selection showing real-time occupancy status (Single, 2-Sharing, 4-Sharing).
+- **AbhiBus-Style Bottom Sheet**: Gesture-controlled sheet for duration selection, amenity inspection, and instant price estimation.
+- **Smart Campus Discovery**: Location-based filtering by proximity to university gates, budget categories, food/mess inclusion, and AC options.
+- **Dynamic Floating Navigation**: Custom Reanimated bottom tab bar that smoothly auto-hides on scroll.
+- **Resident Portal ("My Hostel")**: Digital room access codes, Wi-Fi credentials, laundry booking, and host contact.
+- **Community Hub ("Connect")**: Social board for hostel events, roommate finding, and neighborhood meetups.
+- **Auth Flow**: Mobile OTP verification and user profile management.
 
+---
+
+## 🛠️ Tech Stack
+- **Framework**: [React Native](https://reactnative.dev) (v0.87.1) + React 19
+- **Styling**: [NativeWind](https://www.nativewind.dev/) (Tailwind CSS 3.4)
+- **Animation & Gestures**: [React Native Reanimated](https://docs.swmansion.com/react-native-reanimated/) (v4), [React Native Gesture Handler](https://docs.swmansion.com/react-native-gesture-handler/), [@gorhom/bottom-sheet](https://gorhom.github.io/react-native-bottom-sheet/)
+- **Navigation**: [@react-navigation/native-stack](https://reactnavigation.org/) & [@react-navigation/bottom-tabs](https://reactnavigation.org/)
+- **Icons & Typography**: [react-native-vector-icons](https://github.com/oblador/react-native-vector-icons) (Ionicons), Manrope Font
+
+---
+
+## 🚀 Getting Started
+
+### 1. Prerequisites
+- Node.js >= 22.11.0
+- React Native development environment set up for Android and/or iOS
+
+### 2. Installation
 ```sh
-# Using npm
-npm start
-
-# OR using Yarn
-yarn start
+npm install
 ```
 
-## Step 2: Build and run your app
-
-With Metro running, open a new terminal window/pane from the root of your React Native project, and use one of the following commands to build and run your Android or iOS app:
-
-### Android
-
+### 3. Run Metro Bundler
 ```sh
-# Using npm
+npm start
+```
+
+### 4. Launch on Android or iOS
+```sh
+# Android
 npm run android
 
-# OR using Yarn
-yarn android
-```
-
-### iOS
-
-For iOS, remember to install CocoaPods dependencies (this only needs to be run on first clone or after updating native deps).
-
-The first time you create a new project, run the Ruby bundler to install CocoaPods itself:
-
-```sh
-bundle install
-```
-
-Then, and every time you update your native dependencies, run:
-
-```sh
-bundle exec pod install
-```
-
-For more information, please visit [CocoaPods Getting Started guide](https://guides.cocoapods.org/using/getting-started.html).
-
-```sh
-# Using npm
+# iOS
 npm run ios
-
-# OR using Yarn
-yarn ios
 ```
-
-If everything is set up correctly, you should see your new app running in the Android Emulator, iOS Simulator, or your connected device.
-
-This is one way to run your app — you can also build it directly from Android Studio or Xcode.
-
-## Step 3: Modify your app
-
-Now that you have successfully run the app, let's make changes!
-
-Open `App.tsx` in your text editor of choice and make some changes. When you save, your app will automatically update and reflect these changes — this is powered by [Fast Refresh](https://reactnative.dev/docs/fast-refresh).
-
-When you want to forcefully reload, for example to reset the state of your app, you can perform a full reload:
-
-- **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Dev Menu**, accessed via <kbd>Ctrl</kbd> + <kbd>M</kbd> (Windows/Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (macOS).
-- **iOS**: Press <kbd>R</kbd> in iOS Simulator.
-
-## Congratulations! :tada:
-
-You've successfully run and modified your React Native App. :partying_face:
-
-### Now what?
-
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [docs](https://reactnative.dev/docs/getting-started).
-
-# Troubleshooting
-
-If you're having issues getting the above steps to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
-
-# Learn More
-
-To learn more about React Native, take a look at the following resources:
-
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
